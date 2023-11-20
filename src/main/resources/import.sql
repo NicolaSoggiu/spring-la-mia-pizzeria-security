@@ -14,3 +14,14 @@ INSERT INTO ingredients(name) VALUES("patate");
 INSERT INTO ingredients(name) VALUES("rucola");
 INSERT INTO ingredients(name) VALUES("crudo");
 INSERT INTO ingredients(name) VALUES("funghi");
+
+
+INSERT INTO roles (id, name) VALUES(1, 'ADMIN');
+INSERT INTO roles (id, name) VALUES(2, 'USER');
+
+INSERT INTO users (email, first_name, last_name, registered_at, password) VALUES('nicola@email.com', 'Nicola', 'Soggiu', '2023-11-20 10:35', '{noop}nicola');
+INSERT INTO users (email, first_name, last_name, registered_at, password) VALUES('Mario@email.com', 'Mario', 'Rossi', '2023-11-20 10:35','{noop}mario');
+
+INSERT INTO users_roles (user_id, roles_id) VALUES(1, 1);
+INSERT INTO users_roles (user_id, roles_id) VALUES(1, 2);
+INSERT INTO users_roles (user_id, roles_id) VALUES(2, 2);
